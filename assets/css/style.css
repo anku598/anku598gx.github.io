@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400');
+
+* {padding: 0; margin: 0; list-style: none;}
+img{
+  max-width: 100%;
+}
+
+body{
+  width: 100%;
+  height: auto;
+  background: #f9f8f8;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  margin: 0 auto;
+
+}
+
+/**** Nav CSS goes Here ****/
+
+.header{
+  background: #ffffff;
+  padding: 0.8em 0em;
+  box-shadow: -1px 2px 2px -1px rgba(34,34,34,.2);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.container{
+  width: 80vw;
+  margin: 0 auto;
+}
+
+
+.flex-container  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin: 0 0 0 .45em;
+}
+
+.logo a {
+  color: rgb(28, 24, 22);
+}
+
+.logo a img{
+  width: 230px;
+}
+
+.logo, .navigation {
+  list-style: none;
+}
+
+.logo a, .navigation a {
+  text-decoration: none;
+  letter-spacing: .45rem;
+  
+}
+
+.navigation  {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navigation li:last-of-type a{
+  border-right: none;
+}
+
+.navigation a {
+  display: block;
+  padding: 0em 1em;
+  color: black;
+  border-right: 1px solid rgba(0,0,0, 0.2);
+}
+
+.navigation a:hover {
+  color: #00ace6;
+}
+
+/* *********** media queries *********** */
+@media all and (max-width: 990px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  
+  .logo {
+    margin: 0;
+  }
+  
+  .navigation  {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+
+
+/* ****** ****** */
+@media all and (max-width: 600px) {
+
+  .logo a img{
+    margin: .25em 0;
+    align-self: center; /* align the logo to the left side of 'flex-container' */
+  }
+  
+  .navigation {
+    flex-direction: column;
+  }
+  
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+    border-right: 0px solid #000;
+  }
+  
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+
+/**** About Section CSS***/
+
+.story{
+  background: url(../img/story-bg.png);
+  text-align: center;
+  padding: 2em 0;
+  width: 100%;
+  margin-bottom: 2em;
+  
+}
+.title{
+  margin-bottom: 2em;
+  font-size: 55px;
+}
+.story-para{
+  font-size: 18px;
+  padding: 20px 20px 0;
+  line-height: 2;
+}
+
+/*** Team Area CSS Is Here ***/
+
+.page-content-inner{
+  display: flex;
+  justify-content: space-around;
+
+
+}
+/* .member-one{
+  display: flex;
+}
+.member-two{
+  display: flex;
+}
+.member-three{
+  display: flex;
+  } */
+
+
+  .member{
+    padding: 1.2em 2em 5em;
+    border-radius: 18px!important;
+    background-color: #fff;
+    text-align: center;
+    width: 100%;
+  }
+  .member img{
+    border-radius: 20px!important;
+    background-color: #1f6874;
+    box-shadow: 0 7px 9px 0 rgba(29,29,29,.35)!important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .info{
+    padding: 15px 0px 0;
+    text-align: center;
+    color: #4d819e;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex-1{
+    flex: 1;
+    display: flex;
+    color: #000;
+  }
+  .name{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  .designation{
+    font-language-override: 1.1em;
+    font-weight: 400;
+    margin-bottom: 10px;
+  } 
+  .summ{}
+
+  .social{}
+  .btn-link{
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #4875B4;
+  }
+  .social{}
+
+  /*** Coin Section CSS Here**/
+
+  .coin-section{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3em;
+    margin-top: 2em;
+
+  }
+  .top-coins{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0em 1em;
+    flex-wrap: wrap; 
+  }
+  .top-coins span{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .top-coins span:last-child{
+    color: red;
+  }
+
+
+  /** Crypto Section Css Goes Here***/
+
+  .crypto-section{
+    margin-top: 8em;
+    margin-bottom: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  .crypto-title{
+    font-size: 4em;
+  }
+  .tag{
+    font-size: 3em;
+  }
+  .qoute{
+    font-size: 24px;
+  }
+  .form-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+  }
+}
+.row1{
+  width: 100%;
+  text-align: right;
+}
+.row1 > span{}
+.row2{
+  background: url(../img/bg.png)no-repeat center;
+  width: 100%;
+  background-size: cover;
+  padding: 15px 0 30px 10px;
+  margin: 0;
+  border-radius: 20px!important;
+  width: 100%;
+  box-shadow: 0 0 21.17px 7.83px rgba(29,29,29,.19);
+}
+.row3{
+  position: relative;
+}
+.row3 img{
+  /*background: url(../img/rect1.png)no-repeat;*/
+}
+.form{
+  display: flex;
+  justify-content: space-around;
+  padding: 1em 2em;
+  position: relative;
+}
+.form-left{
+  display: flex;
+  flex-direction: column;
+  flex: 1; 
+}
+.ytext{
+  color: #fff;
+  font-size: 23px;
+  padding-left: 6px;
+  font-weight: 100;
+}
+.selected{
+  width: 92%;
+  padding: 0 10px;
+  background-color: #fff;
+  height: 60px;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.form-right{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+}
+.start-btn{
+ position: absolute;
+ top: 10%;
+ left: 16%;
+ background: url(../img/rect1.png)no-repeat;
+ border: 0px;
+ width: 100%;
+ height: 100%;
+ cursor: pointer;
+}
+/*.start-btn:hover{
+  background: url(../img/rect2.png)no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  }*/
+  .start-btn span{
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    left: 27%;
+    font-size: 20px;
+    line-height: 19px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .icon1{
+    position: absolute;
+    width: 30px;
+    left: 40%;
+    top: 62px;
+  }
+  .icon2{
+    position: absolute;
+    width: 30px;
+    right: 11%;
+    top: 62px;
+  }
+
+  /*** partner CSS is Here***/
+
+  .partner{
+    margin-top: 3em;
+    margin-bottom: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+  .partner-title{
+    font-size: 34px;
+    font-weight: 600;
+    display: flex;
+  }
+  /*.partner-title::after{
+    width: 37%;
+    height: 2px;
+    background:#000;
+    display: block;
+    content: '';
+    position: absolute;
+    right: 80px;
+    bottom: -10px;
+
+    }*/
+    .partner-logo{
+      margin-top: 1em;
+    }
+    .partner-logo img{
+      max-height: 80px;
+      margin-right: 1em;
+      vertical-align: middle;
+
+    }
+
+
+
+    /**** Login Form Style Is Here ***/
+
+    .login-container{
+      border: 1px solid white;
+      width: 600px;
+      height: 350px;
+      position: relative;
+      top: 283px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: inline-flex;
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+    .backbox{  
+      background-color: #404040;
+      width: 100%;
+      height: 80%;
+      position: absolute;
+      transform: translate(0,-50%);
+      top:50%;
+      display: inline-flex;
+      box-shadow: 0 0 21.17px 7.83px rgba(29,29,29,.19);
+    }
+    
+    .frontbox{
+      background-color: white;
+      border-radius: 20px;
+      height: 100%;
+      width: 50%;
+      z-index: 10;
+      position: absolute;
+      right:0;
+      margin-right: 3%;
+      margin-left: 3%;
+      transition: right .8s ease-in-out;
+      box-shadow: 0 0 21.17px 7.83px rgba(29,29,29,.19);
+    }
+    
+    .moving{
+      right:45%;
+    }
+    
+    .loginMsg, .signupMsg{
+      width: 50%;
+      height: 100%;
+      font-size: 15px;
+      box-sizing: border-box;
+    }
+    
+    .loginMsg .title,
+    .signupMsg .title{
+      font-weight: 300;
+      font-size: 23px;
+    }
+    
+    .loginMsg p,
+    .signupMsg p {
+      font-weight: 100;
+    }
+    
+    .textcontent{
+      color:white;
+      margin-top:65px;
+      margin-left: 12%;
+    }
+    
+    .loginMsg button,
+    .signupMsg button {
+      background-color: #404040;
+      border: 2px solid white;
+      border-radius: 10px;
+      color:white;
+      font-size: 12px;
+      box-sizing: content-box;
+      font-weight: 300;
+      padding:10px;
+      margin-top: 20px;
+    }
+    
+    /* front box content*/
+    .login, .signup{
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .login h2,
+    .signup h2 {
+      color: #35B729;
+      font-size:22px;
+    }
+    
+    .inputbox{
+      margin-top:30px; 
+    }
+    .login input, 
+    .signup input {
+      display: block;
+      width: 100%;
+      height: 40px;
+      background-color: #f2f2f2;
+      border: none;
+      margin-bottom:20px;
+      font-size: 12px;
+    }
+    
+    .login button,
+    .signup button{
+      background-color: #35B729;
+      border: none;
+      color:white;
+      font-size: 12px;
+      font-weight: 300;
+      box-sizing: content-box;
+      padding:10px;
+      border-radius: 10px;
+      width: 60px;
+      position: absolute;
+      right:30px;
+      bottom: 30px;
+      cursor: pointer;
+    }
+    
+    /* Fade In & Out*/
+    .login p {
+      cursor: pointer;
+      color:#404040;
+      font-size:15px;
+    }
+    
+    .loginMsg, .signupMsg{
+      /*opacity: 1;*/
+      transition: opacity .8s ease-in-out;
+    }
+    
+    .visibility{
+      opacity: 0;
+    }
+    
+    .hide{
+      display: none;
+    }
+
+    /*** Footer Area CSS**/
+
+    .footer{
+     background: #efefef;
+     padding: 25px 15px;
+     box-shadow: 0 6px 4px -4px rgba(34,34,34,.2);
+     margin-top: 9%;
+   }
+   .footer-flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 0;
+  }
+  .contact{}
+  .contact > h3{
+    text-transform: uppercase;
+  }
+  .address{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    color: #71737a;
+    padding: 11px 0;
+  }
+  .road{
+    margin-bottom: 0.8em;
+  }
+  .mail{}
+  .social-icon{}
+  .social-icon a{
+    font-size: 19px;
+    color: black;
+    padding: 0px 3px;
+  }
+
+  .nav-link{
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-link > h3{
+    text-transform: uppercase;
+  }
+  .nav-link  ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-link  ul li{
+
+  }
+  .nav-link  ul li a{
+    text-decoration: none;
+    color: #222222;
+    line-height: 33px;
+  }
+
+  .footer-bottom{
+    padding: 20px 0;
+  }
+  .b-flex-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .b-flex-container span{}
+  .b-flex-container span a{
+    text-decoration: none;
+  }
