@@ -4,73 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Practice Layout</title>
+  <title>GX Change</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  
-  <div class="header">
-    <div class="container">
-      <div class="flex-container">
-        <h1 class="logo"><a href="index.html"><img src="assets/img/logo.jpg" alt=""></a></h1>
-        <ul class="navigation">
-          <li><a href="#">Exchange</a></li>
-          <li><a href="#">Partner</a></li>
-          <li><a href="#">Markets</a></li>
-          <li><a href="make.html">About</a></li>
-          <li><a href="#">Currencies</a></li>
-        </ul>
-      </div>
+
+  <style>
+
+</style>
+
+<div class="header">
+  <div class="container">
+    <div class="flex-container">
+      <h1 class="logo"><a href="index.html"><img src="assets/img/logo.jpg" alt=""></a></h1>
+      <ul class="navigation">
+        <li><a href="#">Exchange</a></li>
+        <li><a href="#">Partner</a></li>
+        <li><a href="#">Markets</a></li>
+        <li><a href="make.html">About</a></li>
+        <li><a href="#">Currencies</a></li>
+      </ul>
     </div>
   </div>
+</div>
 
-  <div class="login-container">
-    <div class="backbox">
-      <div class="loginMsg">
-        <div class="textcontent">
-          <p class="title">Don't have an account?</p>
-          <p>Sign up to save all your graph.</p>
-          <button id="switch1">Sign Up</button>
-        </div>
-      </div>
-      <div class="signupMsg visibility">
-        <div class="textcontent">
-          <p class="title">Have an account?</p>
-          <p>Log in to see all your collection.</p>
-          <button id="switch2">LOG IN</button>
-        </div>
-      </div>
-    </div>
-    <!-- backbox -->
-    
-    <div class="frontbox">
-      <div class="login">
-        <h2>LOG IN</h2>
-        <div class="inputbox">
-          <input type="text" name="email" placeholder="  EMAIL">
-          <input type="password" name="password" placeholder="  PASSWORD">
-        </div>
-        <p>FORGET PASSWORD?</p>
-        <button>LOG IN</button>
-      </div>
-      
-      <div class="signup hide">
-        <h2>SIGN UP</h2>
-        <div class="inputbox">
-          <input type="text" name="fullname" placeholder="  FULLNAME">
-          <input type="text" name="email" placeholder="  EMAIL">
-          <input type="password" name="password" placeholder="  PASSWORD">
-        </div>
-        <button>SIGN UP</button>
-      </div>
-      
-    </div>
-    <!-- frontbox -->
-  </div>
+<div class="container">
+  <form class="exchange-form">
+    <h1 class="form-title">Exchange Into</h1>
+    <input placeholder="Insert your Bitcoin address" type="text" required="">
+    <input placeholder="Insert your Refund address" type="text" required="">
+   <button class="transection-btn">Start Transection</button>
+ </form> 
+</div>
 
-  <div class="footer">
+<a class="follow" href="https://twitter.com/mildrenben" target="_blank"><i class="fa fa-twitter"></i>Follow Me</a>
+
+<div class="footer">
   <div class="container footer-flex">
     <div class="contact">
       <h3>Contact</h3>
@@ -108,45 +79,45 @@
     <span><a href="#">GxChange.co</a> All Rights Reseved</span>
   </div>
 </div>
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-  <script src="js/main.js"></script>
-  <script>
-    var $loginMsg = $('.loginMsg'),
-    $login = $('.login'),
-    $signupMsg = $('.signupMsg'),
-    $signup = $('.signup'),
-    $frontbox = $('.frontbox');
-    
-    $('#switch1').on('click', function() {
-      $loginMsg.toggleClass("visibility");
-      $frontbox.addClass("moving");
-      $signupMsg.toggleClass("visibility");
-      
-      $signup.toggleClass('hide');
-      $login.toggleClass('hide');
-    })
-    
-    $('#switch2').on('click', function() {
-      $loginMsg.toggleClass("visibility");
-      $frontbox.removeClass("moving");
-      $signupMsg.toggleClass("visibility");
-      
-      $signup.toggleClass('hide');
-      $login.toggleClass('hide');
-    })
-    
-    setTimeout(function(){
-      $('#switch1').click()
-    },1000)
-    
-    setTimeout(function(){
-      $('#switch2').click()
-    },3000)
-    
-  </script>
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+<script>
+  var $loginMsg = $('.loginMsg'),
+  $login = $('.login'),
+  $signupMsg = $('.signupMsg'),
+  $signup = $('.signup'),
+  $frontbox = $('.frontbox');
+
+  $('#switch1').on('click', function() {
+    $loginMsg.toggleClass("visibility");
+    $frontbox.addClass("moving");
+    $signupMsg.toggleClass("visibility");
+
+    $signup.toggleClass('hide');
+    $login.toggleClass('hide');
+  })
+
+  $('#switch2').on('click', function() {
+    $loginMsg.toggleClass("visibility");
+    $frontbox.removeClass("moving");
+    $signupMsg.toggleClass("visibility");
+
+    $signup.toggleClass('hide');
+    $login.toggleClass('hide');
+  })
+
+  setTimeout(function(){
+    $('#switch1').click()
+  },1000)
+
+  setTimeout(function(){
+    $('#switch2').click()
+  },3000)
+
+</script>
 </body>
 </html>
 
